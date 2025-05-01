@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container mx-auto min-h-screen bg-[url('stash/BG.png')] bg-center bg-cover">
+
+    <!-- NavBar -->
+    <nav class="w-full bg-transparent h-14 flex justify-between px-4 items-center text-white mt-3">
+        <div>
+            <img class="w-44 cursor-pointer" src="stash/logo.png" alt="">
+        </div>
+
+        <ul class="md:flex font-semibold hidden pt-2 gap-x-8">
+            <li class="cursor-pointer"><a href="#">Home</a></li>
+            <li class="cursor-pointer"><a href="#">About</a></li>
+            <li class="cursor-pointer"><a href="#">Features</a></li>
+            <li class="cursor-pointer"><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="hidden md:block text-white px-2 py-2 rounded font-bold cursor-pointer pt-3"><img class="w-10"
+                src="stash/cart.png" alt="">
+        </div>
+
+        <div class="md:hidden">
+            <a class="text-4xl" href="#">&#8801;</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero -->
+    <div class="hero flex flex-wrap lg:flex-row flex-col mt-8">
+
+        <!-- All Left Info -->
+        <div class="left-pane text-white flex-1 m-auto ">
+
+            <div class="l-wrapper w-[80%] m-auto">
+
+                <h1 class="text-4xl font-bold">Groceries <br> delivery in <span class="font-light">15 mins</span></h1>
+
+                <p class="md:text-xl my-8 lg:text-2xl font-light">Grocify over a wide range of products, inclusing fresh
+                    products, meats dairy, baked goods and non-perishable items</p>
+
+                <div class="dibba">
+                    <button class="bg-yellow-500 p-2 rounded-full md:p-4 md:mr-3">Order Now</button>
+                    <button class="bg-transparent p-2 md:p-4">Download App ></button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Hero-Dude -->
+        <div class="hero-img flex-1 m-auto">
+            <img class="" src="stash/Dude.png" alt="hero-img">
+        </div>
+    </div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            font-family: "Poppins", sans-serif;
+            /* tailwind applies margin and padding 0 && box-sizing border box automatically */
+            /* border: 0.2px solid grey; helps in debug */
+        }
+    </style>
+
+</body>
+
+</html>
